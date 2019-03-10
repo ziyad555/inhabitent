@@ -11,7 +11,13 @@ if ( ! function_exists( 'red_starter_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  */
+
+
 function red_starter_setup() {
+
+	// adding a heade image to my theme
+	add_theme_support( 'custom-header');
+
 	//my edit on theme logo monday 12:37pm
 	add_theme_support( 'custom-logo' );
 
@@ -67,6 +73,17 @@ function red_starter_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
+register_sidebar( array(
+	'name' => 'Footer Sidebar 1',
+	'id' => 'footer-sidebar-1',
+	'description' => 'Appears in the footer area',
+	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+	'after_widget' => '</aside>',
+	'before_title' => '<h3 class="widget-title">',
+	'after_title' => '</h3>',
+	) );
+	
 }
 add_action( 'widgets_init', 'red_starter_widgets_init' );
 
@@ -110,3 +127,29 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/extras.php';
 
+//------------------------------my edit monday 4:30pm
+//function wp_head(){
+//do_action('wp_head');}
+
+// Remove "Editor" links from sub-menus
+function inhabitent_remove_submenus() {
+    remove_submenu_page( 'themes.php', 'theme-editor.php' );
+    remove_submenu_page( 'plugins.php', 'plugin-editor.php' );
+}
+add_action( 'admin_menu', 'inhabitent_remove_submenus', 110 );
+
+add_action( ‘init’, ‘create_private_book_tax’ );
+
+//rigester private taxonomy to adventures
+function creat_private_book_tax() {
+	register_taxonomu(
+		'genre',
+		'book',
+		array(
+			'label' => __( 'Adventures'),
+			'public' => false,
+			'rewrite' => false,
+			'hierarchical' => true,
+		)
+	);
+}
