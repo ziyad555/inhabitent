@@ -809,7 +809,7 @@ article#post-60 {
   padding: .75rem; }
 
 div#secondary {
-  margin-top: 100px;
+  margin-top: 58px;
   /* border: 5px; */ }
 
 article#post-27 {
@@ -985,7 +985,6 @@ header {
   margin-top: -40px; }
 
 .site-header {
-  border-bottom: 1px solid #e1e1e1;
   padding: .5rem 0;
   position: fixed;
   -webkit-transition: top .5s linear;
@@ -996,7 +995,6 @@ header {
 
 .site-header.reverse-header {
   background-color: transparent;
-  border-bottom: 0;
   position: absolute;
   text-shadow: 1px 1px 2px #323232; }
 
@@ -1023,7 +1021,7 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  width: 1120px; }
+  width: 100%; }
 
 body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .widget-area {
   margin-top: 100px;
@@ -1031,3 +1029,158 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
 
 div#content-about {
   width: 100%; }
+
+h2.about-h2 {
+  text-align: center;
+  font-size: 40px;
+  font-family: Novecento Sans Web,sans-serif; }
+
+p.head-contact {
+  margin-top: -130px; }
+
+.mapouter {
+  text-align: right;
+  height: 500px;
+  width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  wdith: 100%; }
+
+input[type=email], input[type=password], input[type=search], input[type=text], input[type=url], textarea {
+  color: #666;
+  background-color: #f4f4f4;
+  border: 1px solid #e1e1e1;
+  border-radius: 0; }
+
+label {
+  color: #2f1339;
+  display: block;
+  font-family: Novecento Sans Web,sans-serif;
+  font-size: 17.6px;
+  font-size: 1.1rem;
+  margin-bottom: .5rem;
+  text-transform: uppercase; }
+
+.black-btn, .btn, .white-btn, button, input[type=button], input[type=reset], input[type=submit] {
+  background: #248a83;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  font-family: Novecento Sans Web,sans-serif;
+  font-size: 14.4px;
+  font-size: .9rem;
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+h3 {
+  font-size: 30px; }
+
+.div-sep-2 {
+  margin-left: 150px; }
+
+h3.head-contact {
+  margin-left: 45px; }
+
+h3.journal-text {
+  background-color: #248a83;
+  color: #fff;
+  font-size: 33.6px;
+  font-size: 2.1rem;
+  left: 0;
+  padding: .75rem 1.5rem;
+  position: absolute;
+  margin-top: 2.25rem;
+  max-width: 40%;
+  top: 0; }
+
+h3.journal-text {
+  position: absolute;
+  top: 199px;
+  left: 50px;
+  left: 150px; }
+
+img.wp-image-254 {
+  height: auto;
+  margin-left: 150px;
+  width: 800px; }
+
+p.journal-text-2 {
+  margin-top: -100px;
+  margin-left: 150px; }
+
+img.image.wp-image-44.attachment-medium.size-medium {
+  height: 300px;
+  width: 720px;
+  max-height: 300px; }
+
+div#footer-sidebar1 {
+  display: -webkit-inline-box; }
+
+.footer-blocks.container {
+  position: absolute;
+  display: -webkit-inline-box; }
+
+img.footer-image {
+  position: relative;
+  bottom: -2px;
+  right: -444px; }
+
+.contact {
+  position: relative;
+  bottom: 8px;
+  right: -10px; }
+
+.business-hours {
+  position: relative;
+  bottom: 8px;
+  right: -84px; }
+
+body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .widget-area {
+  width: 27%; }
+
+h3.contact-me .business {
+  color: white; }
+
+p.contact-me .business {
+  color: white; }
+
+.home .adventures ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 2fr;
+  grid-gap: 20px 20px;
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  width: 100%; }
+
+.home .adventures li:first-child {
+  grid-column: 1/span 2;
+  grid-row: 1/span 2; }
+
+.home .adventures li:before {
+  content: " ";
+  display: inline-block;
+  width: 1px;
+  height: 0; }
+
+.home .adventures .story-wrapper {
+  bottom: 0;
+  left: 0;
+  /* position: absolute; */
+  right: 0;
+  top: 0;
+  z-index: 1; }
+
+.home .adventures .story-wrapper:after {
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1; }

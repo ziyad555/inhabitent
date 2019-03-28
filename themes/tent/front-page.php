@@ -61,7 +61,7 @@ get_header(); ?>
                         </ul>
                 <?php endif; ?>
             </section>
- <!------------------------------------------------------------------ ADENTURES SECTION ----------------------------------------------------------------
+ <!------------------------------------------------------------------ ADENTURES SECTION ---------------------------------------------------------------->
  <section class="adventures container">
  <?php
             $args = array( 'post_type' => 'adventures', 'posts_per_page' => '4' );
@@ -90,7 +90,7 @@ get_header(); ?>
                   <a href="<?php echo get_post_type_archive_link( 'adventures' ); ?>" class="btn">More Adventures</a>
                </p>
             <?php endif; ?>
-                     </section>-->
+                     </section> 
            
     
          <div id="primary" class="content-area">
